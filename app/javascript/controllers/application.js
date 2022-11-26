@@ -1,4 +1,5 @@
 import { Application } from "@hotwired/stimulus"
+import Notification from 'stimulus-notification'
 
 const application = Application.start()
 
@@ -7,3 +8,5 @@ application.debug = false
 window.Stimulus   = application
 
 export { application }
+
+application.register('notification', Notification)
