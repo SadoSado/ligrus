@@ -13,8 +13,9 @@
   </head>
 
   <body>
+    <%= render "layouts/shared/navbar" %>
     <div class="container mx-auto">
-      <%= render "shared/flash" %>
+      <%= render "layouts/shared/flash" %>
     <%= yield %>
     </div>
   </body>

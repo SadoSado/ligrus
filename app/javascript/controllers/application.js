@@ -1,5 +1,6 @@
 import { Application } from "@hotwired/stimulus"
 import Notification from 'stimulus-notification'
+import Dropdown from 'stimulus-dropdown'
 
 const application = Application.start()
 
@@ -10,3 +11,4 @@ window.Stimulus   = application
 export { application }
 
 application.register('notification', Notification)
+application.register('dropdown', Dropdown)
